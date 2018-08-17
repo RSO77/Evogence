@@ -1,0 +1,55 @@
+.section {
+  position: relative;
+  height: 100vh;
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 100%;
+    text-align: center;
+  }
+  .swiper-container{
+    height: 230px;
+  }
+  .name {
+    font-weight: 500;
+    margin: 15px auto;
+    text-align: left;
+  }
+  .position {
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .filter {
+    margin-top: 200px;
+    background-color: #d1dcdc;
+    width: 100%;
+    text-align: center;
+    .block {
+      width: 110px;
+      padding: 20px 10px;
+      margin: 0 20px;
+      cursor: pointer;
+      background-color: #d1dcdc;
+      height: 100%;
+      display: inline-block;
+      p {
+        font-size: 10px;
+        text-transform: uppercase;
+        margin-top: 10px;
+      }
+      &:hover {
+        background-color: #b0baba;
+      }
+    }
+  }
+  .swiper-slide{
+    display: block;
+  }
+  .display{
+    display: none;
+  }
+}
