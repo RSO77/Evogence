@@ -29,4 +29,18 @@ $(function () {
         swiper.update();
     });
 
+
+    $('.swiper-slide').click(function () {
+        $('.popup-doc').addClass('display');
+        $('.popup').removeClass('display');
+        var str = $(this).attr('class');
+        var str2 = str.indexOf("doc");
+        var tmp = '.popup-' + str.substring(str2, str.indexOf(" ", str2));
+        $(tmp).removeClass('display');
+    });
+    $('.close-popup').click(function () {
+        $('.popup').addClass('display');
+        $('.popup-doc').addClass('display');
+    });
+
 });
