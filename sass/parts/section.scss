@@ -10,7 +10,7 @@
     text-align: center;
   }
   .swiper-container{
-    height: 230px;
+    min-height: 230px;
   }
   .name {
     font-weight: 500;
@@ -21,6 +21,7 @@
     font-weight: 500;
     text-transform: uppercase;
     text-align: left;
+    margin-bottom: 20px;
   }
   .popup{
     position: absolute;
@@ -84,7 +85,7 @@
   }
 
   .filter {
-    margin-top: 200px;
+    margin-top: 150px;
     background-color: #d1dcdc;
     width: 100%;
     text-align: center;
